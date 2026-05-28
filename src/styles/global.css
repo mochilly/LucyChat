@@ -1,0 +1,27 @@
+@import './variables.css';
+@import './reset.css';
+@import './animations.css';
+
+.app-layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    width: 100%;
+  }
+}
